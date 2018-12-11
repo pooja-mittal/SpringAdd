@@ -10,6 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Addition {
 	
+	//this mthod will read form parameter with the help of requestparam
 	@RequestMapping("/add")
 	public ModelAndView add(@RequestParam("t1") int num1, @RequestParam("t2") int num2, HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("inside addition method");
